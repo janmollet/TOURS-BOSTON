@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title": "Boston City Guide",
+    "subtitle": "Select points on the map to discover monuments, parks and historical sites.",
+    "footerHint": "Scroll to zoom the map • Click icons to see details"
+  },
+  "filters": {
+    "monuments": "Monuments",
+    "parks": "Parks",
+    "history": "History"
+  },
+  "map": {
+    "title": "Boston Points of Interest"
+  },
+  "language": {
+    "switch": "Switch language:"
+  }
+}
