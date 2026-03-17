@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title": "Guía de la Ciudad de Boston",
+    "subtitle": "Selecciona los puntos en el mapa para descubrir monumentos, parques y sitios históricos.",
+    "footerHint": "Haz scroll para ampliar el mapa • Haz clic en los iconos para ver detalles"
+  },
+  "filters": {
+    "monuments": "Monumentos",
+    "parks": "Parques",
+    "history": "Historia"
+  },
+  "map": {
+    "title": "Puntos de Interés de Boston"
+  },
+  "language": {
+    "switch": "Cambiar idioma:"
+  }
+}

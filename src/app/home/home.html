@@ -1,0 +1,35 @@
+<!-- Language Switcher -->
+<div class="d-flex justify-content-end w-100 px-4 mt-3">
+  <div class="language-switcher">
+    <span class="lang-label">{{ 'language.switch' | translate }}</span>
+    <select (change)="useLanguage($any($event.target).value)" class="lang-select">
+      <option value="en">🇺🇸 English</option>
+      <option value="esp">🇪🇸 Español</option>
+    </select>
+  </div>
+</div>
+<button routerLink="/interactive-mp" class="btn btn-primary">Go to interactive map</button>
+<div class="explorer-container d-flex flex-column align-items-center py-5">
+
+  <!-- Title & Subtitle -->
+  <div class="text-group text-center mb-4">
+    <p class="eyebrow">Discover the city</p>
+    <h1 class="explorer-title">{{ 'home.title' | translate }}</h1>
+    <p class="explorer-subtitle">{{ 'home.subtitle' | translate }}</p>
+  </div>
+
+  <!-- Filter Buttons -->
+  <div class="filter-group mb-5">
+    <button type="button" class="filter-btn active">{{ 'filters.monuments' | translate }}</button>
+    <button type="button" class="filter-btn">{{ 'filters.parks' | translate }}</button>
+    <button type="button" class="filter-btn">{{ 'filters.history' | translate }}</button>
+  </div>
+
+  
+
+  <!-- Footer -->
+  <footer class="explorer-footer mt-5 text-center">
+    <p class="footer-hint">{{ 'home.footerHint' | translate }}</p>
+  </footer>
+
+</div>
