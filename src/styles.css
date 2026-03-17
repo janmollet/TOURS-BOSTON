@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+/* Make carousel images scale nicely for any size */
+.carousel-image {
+  max-height: 500px;   /* optional max height */
+  width: 100%;
+  object-fit: contain;  /* preserves aspect ratio, fits inside container */
+  object-position: center;
+}

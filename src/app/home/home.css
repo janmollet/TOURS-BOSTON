@@ -230,3 +230,44 @@ body, :host {
 
 .footer-hint::before { content: '— '; }
 .footer-hint::after  { content: ' —'; }
+
+/* CSS */
+.fancy-btn {
+  background: linear-gradient(135deg, #ddb68e, #b07d4a);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px #b07d4a73;
+  overflow: hidden;
+}
+
+.fancy-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-25deg);
+  transition: all 0.5s ease;
+}
+
+.fancy-btn:hover::after {
+  left: 125%;
+}
+
+.fancy-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.fancy-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
