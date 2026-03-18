@@ -6,3 +6,94 @@
   object-fit: contain;  /* preserves aspect ratio, fits inside container */
   object-position: center;
 }
+
+/* --- RESPONSIVE PARA TELÉFONOS --- */
+/* --- CONFIGURACIÓN PARA MÓVILES (iPhone/Android) --- */
+@media (max-width: 600px) {
+  
+  /* Contenedor de la leyenda: Ultra estrecho y flotante */
+  .map-legend {
+    width: 120px !important;      /* Ancho mínimo para no tapar el mapa */
+    max-height: 30vh !important;   /* Solo ocupa el 30% de la altura de la pantalla */
+    position: fixed !important;
+    top: 10px !important;
+    right: 10px !important;
+    padding: 6px 10px !important;
+    font-size: 11px !important;
+    background: rgba(255, 255, 255, 0.9) !important; /* Transparencia para ligereza visual */
+    backdrop-filter: blur(4px);    /* Efecto cristal esmerilado (iOS style) */
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    overflow-y: auto !important;   /* Scroll vertical habilitado */
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch; /* Scroll suave en iPhones */
+  }
+
+  /* Títulos de secciones (Cuisine, Tours, Music) */
+  .map-legend h4 {
+    font-size: 10px !important;
+    text-transform: uppercase;
+    color: #888;
+    margin: 8px 0 4px 0 !important;
+    letter-spacing: 0.5px;
+    border-bottom: 0.5px solid #eee;
+  }
+
+  /* Items de la lista: más apretados para ahorrar espacio */
+  .legend-item {
+    padding: 3px 0 !important;
+    margin-bottom: 2px !important;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;       /* Evita que el texto salte de línea */
+    overflow: hidden;
+    text-overflow: ellipsis;   /* Corta con "..." si el nombre es muy largo */
+    color: #333;
+  }
+
+  /* Círculos de color minúsculos */
+  .color-circle {
+    width: 8px !important;
+    height: 8px !important;
+    margin-right: 6px !important;
+    flex-shrink: 0;            /* Evita que el círculo se deforme */
+    border: 0.5px solid rgba(0,0,0,0.2);
+  }
+
+  /* Personalización de la barra de scroll para que no moleste */
+  .map-legend::-webkit-scrollbar {
+    width: 3px;
+  }
+  .map-legend::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+  /* Ajuste de los POPUPS para que quepan en la pantalla del móvil */
+  .leaflet-popup-content-wrapper {
+    max-width: 240px !important;
+    border-radius: 12px !important;
+  }
+  
+  .leaflet-popup-content {
+    margin: 10px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* --- CONFIGURACIÓN PARA IPADS / TABLETS --- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .map-legend {
+    width: 180px !important;
+    max-height: 50vh !important;
+  }
+}
+
+/* --- RESPONSIVE PARA IPADS --- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .map-legend {
+    width: 200px;
+    max-height: 60vh;
+  }
+}

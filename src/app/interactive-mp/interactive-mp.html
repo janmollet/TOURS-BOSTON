@@ -1,42 +1,5 @@
 <div class="map-wrapper">
   <div id="map"></div>
 
-  <button class="unlock-fab" *ngIf="!tourActive" (click)="openUnlockModal()">
-    <span>🔒</span> Unlock Tour Discounts
-  </button>
-
-  <div class="modal-overlay" *ngIf="showModal" (click)="closeModal()">
-    <div class="modal-content" (click)="$event.stopPropagation()">
-      <h3>Tour Access</h3>
-      <p>Enter today's code to unlock exclusive discounts on the map.</p>
-      
-      <input 
-        type="text" 
-        [(ngModel)]="tourCodeInput" 
-        placeholder="e.g. BOSTON13"
-        (keyup.enter)="verifyCode()">
-
-      <div class="modal-actions">
-        <button class="btn-cancel" (click)="closeModal()">Cancel</button>
-        <button class="btn-verify" (click)="verifyCode()">Verify</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" *ngIf="showConfirmModal" (click)="showConfirmModal = false">
-  <div class="modal-content confirm-modal" (click)="$event.stopPropagation()">
-    <div class="warning-icon">⚠️</div>
-    <h3>Redeem Discount?</h3>
-    
-    <p>Do you want to generate the discount code for:</p>
-    <div class="restaurant-name-highlight">{{ selectedRestaurant }}</div>
-    
-    <p class="warning-text">Only confirm this when you are ready to pay at the establishment.</p>
-    
-    <div class="modal-actions">
-      <button class="btn-cancel" (click)="showConfirmModal = false">Not Yet</button>
-      <button class="btn-confirm-redeem" (click)="confirmRedeem()">Yes, Show QR</button>
-    </div>
-  </div>
+  
 </div>

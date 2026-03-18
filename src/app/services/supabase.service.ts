@@ -24,4 +24,28 @@ export class SupabaseService {
     }
     return data;
   }
+
+    async getMusic() {
+    const { data, error } = await this.supabase
+      .from('music')
+      .select('*');
+
+    if (error) {
+      console.error('Supabase error:', error.message);
+      return [];
+    }
+    return data;
+  }
+
+  async getTours() {
+    const { data, error } = await this.supabase
+      .from('tours')
+      .select('*');
+
+    if (error) {
+      console.error('Supabase error:', error.message);
+      return [];
+    }
+    return data;
+  }
 }
