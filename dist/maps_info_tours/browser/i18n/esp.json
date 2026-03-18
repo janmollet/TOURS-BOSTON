@@ -2,7 +2,7 @@
   "home": {
     "title": "Guía de la Ciudad de Boston",
     "subtitle": "Selecciona los puntos en el mapa para descubrir monumentos, parques y sitios históricos.",
-    "footerHint": "Haz scroll para ampliar el mapa • Haz clic en los iconos para ver detalles"
+    "footerHint": "Copyright © Boston 2026. Todos los derechos reservados."
   },
   "filters": {
     "monuments": "Monumentos",
@@ -14,5 +14,13 @@
   },
   "language": {
     "switch": "Cambiar idioma:"
+  },
+  "titulo":{
+    "titulo": "Accede a nuestro mapa interactivo"
+  },
+   "titulo_general":{
+    "titulo_general": "Bienvenidos a Boston!"
   }
+
+  
 }

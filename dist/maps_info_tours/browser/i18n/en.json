@@ -2,7 +2,7 @@
   "home": {
     "title": "Boston City Guide",
     "subtitle": "Select points on the map to discover monuments, parks and historical sites.",
-    "footerHint": "Scroll to zoom the map • Click icons to see details"
+    "footerHint": "Copyright © Boston 2026. All rights reserved."
   },
   "filters": {
     "monuments": "Monuments",
@@ -14,5 +14,11 @@
   },
   "language": {
     "switch": "Switch language:"
+  },
+  "titulo":{
+    "titulo": "Access our interactive map"
+  },
+   "titulo_general":{
+    "titulo_general": "Welcome to Boston!"
   }
 }
